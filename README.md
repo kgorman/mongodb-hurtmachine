@@ -12,6 +12,7 @@ An Ansible playbook for load testing MongoDB (and TokuMX) using sysbench-mongodb
 git clone https://github.com/kgorman/mongodb-hurtmachine.git
 cd mongodb-hurtmachine
 ansible-galaxy install kgorman.mongodb
+ansible-galaxy install kgorman.TokuMX-Install
 ansible-galaxy install kgorman.sysbench-mongodb
 ```
 
