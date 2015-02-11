@@ -16,7 +16,7 @@ ansible-galaxy install kgorman.TokuMX-Install
 ansible-galaxy install kgorman.sysbench-mongodb
 ```
 
-Change the [loadservers] and [mongodbservers] lines to match your enviroment.
+Change the [loadservers] and [mongodbservers] lines in hosts.txt to match your enviroment.
 
 ```bash
 ansible-playbook -i hosts.txt site.yml
