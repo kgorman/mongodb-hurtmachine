@@ -16,8 +16,21 @@ ansible-galaxy install kgorman.TokuMX-Install
 ansible-galaxy install kgorman.sysbench-mongodb
 ```
 
-Change the [loadservers] and [mongodbservers] lines in hosts.txt to match your enviroment.
+- Change the [loadservers] and [mongodbservers] lines in hosts.txt to match your enviroment.
+- Copy your public key over to each of the servers root account.
 
 ```bash
 ansible-playbook -i hosts.txt site.yml
+```
+
+## Running a load test
+
+To run the load test in sysbench-mongodb.
+
+```bash
+ssh root@<loadserver ip>
+bash
+cd sysbench
+export CLASSPATH=./mongo-java-driver-2.13.0-rc2.jar
+./run.simple.bash
 ```
