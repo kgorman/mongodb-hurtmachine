@@ -1,6 +1,10 @@
 # mongodb-hurtmachine
 An Ansible playbook for load testing MongoDB (and TokuMX) using sysbench-mongodb. Uses Ansible roles from Galaxy for the heavy lifting, this is just a harness to run everything from for the most part.
 
+## Requirements
+- git
+- [ansible](http://docs.ansible.com/intro_installation.html)
+
 ## Installation
 
 - Clone this repo
@@ -17,7 +21,7 @@ ansible-galaxy install kgorman.sysbench-mongodb
 ```
 
 - Change the [loadservers] and [mongodbservers] lines in hosts.txt to match your enviroment.
-- Copy your public key over to each of the servers root account.
+- Copy your public key over to each of the servers root account. Some cloud platforms like Rackspace and AWS handle this for you. If you are doing it manually here is a [Primer](http://docs.ansible.com/intro_getting_started.html#remote-connection-information)
 
 ```bash
 ansible-playbook -i hosts.txt site.yml
