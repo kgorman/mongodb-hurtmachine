@@ -1,0 +1,11 @@
+- hosts: mongodbservers
+  roles:
+      - { role: ansible-roles_mongodb-install }
+
+- hosts: tokumxservers
+  roles:
+      - { role: ansible-roles_mongodb-install }
+
+- hosts: loadservers
+  roles:
+      - { role: ansible-roles_sysbench-mongodb }
