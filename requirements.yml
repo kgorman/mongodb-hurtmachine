@@ -1,0 +1,10 @@
+# from github installing to a relative path
+
+- src: https://github.com/kgorman/ansible-roles_tokumx-install.git
+  path: roles/
+
+- src: https://github.com/kgorman/ansible-roles_sysbench-mongodb.git
+  path: roles/
+
+- src: https://github.com/kgorman/ansible-roles_mongodb-install.git
+  path: roles/

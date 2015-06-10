@@ -1,9 +1,5 @@
-[tokumxservers]
-0.0.0.0 mongodb_default_compression=none
-
 [loadservers]
-0.0.0.1 sysbench_mongodb_port=9005 sysbench_mongodb_number_of_docs_per_collection=5000000 sysbench_mongodb_host=0.0.0.2
+104.130.21.71 sysbench_mongodb_port=9005 sysbench_mongodb_number_of_docs_per_collection=5000000 sysbench_mongodb_host=162.209.124.64 mongodb_admin_pass=f7e157e3ec0d049a4a674fe97342eb81
 
 [mongodbservers]
-0.0.0.2 mongodb_storage_engine=wiredTiger mongodb_version=3.0.0-rc8
-
+162.209.124.64 mongodb_version=2.6.8 mongodb_port=9005
