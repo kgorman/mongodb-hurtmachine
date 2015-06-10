@@ -1,5 +1,5 @@
 [loadservers]
-0.0.0.0 sysbench_mongodb_port=9005 sysbench_mongodb_number_of_docs_per_collection=5000000 sysbench_mongodb_host=162.209.124.64 mongodb_admin_pass=mypass mongodb_admin_user=myuser
+0.0.0.0 sysbench_mongodb_port=9005 sysbench_mongodb_number_of_docs_per_collection=5000000 sysbench_mongodb_host=0.0.0.0 mongodb_admin_pass=mypass mongodb_admin_user=myuser
 
 [mongodbservers]
 0.0.0.0 mongodb_version=2.6.8 mongodb_port=9005
